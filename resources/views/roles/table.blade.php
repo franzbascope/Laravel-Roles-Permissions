@@ -19,12 +19,19 @@
                 <td>
                     {!! Form::open(['route' => ['roles.destroy', $role->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
+
                         <a href="{{ route('roles.show', [$role->id]) }}" class='btn btn-default btn-xs'><i
                                 class="glyphicon glyphicon-eye-open"></i></a>
+                        @can('edit_roles')
                         <a href="{{ route('roles.edit', [$role->id]) }}" class='btn btn-default btn-xs'><i
                                 class="glyphicon glyphicon-edit"></i></a>
+                        @endcan
+                        @can('delete_roles')
                         {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' =>
                         'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                        @endcan
+
+
                     </div>
                     {!! Form::close() !!}
                 </td>

@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 
 Route::resource('books', 'booksController');
 Route::resource('roles', 'RoleController');
+
+Route::resource('users', 'UserController');
+Route::get('/roles/{role}/delete_roles ', 'UserController@delete_roles')->name('users.delete_roles');
