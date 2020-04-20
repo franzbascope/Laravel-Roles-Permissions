@@ -11,6 +11,15 @@ Hi guys, this project is to show you how to set up a simple Roles & Permissions 
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Instructions to run this project
+
+-   Git clone it.
+-   Set up your env varibles
+-   In your project directory run:
+    -   php artisan migrate && php artisan db:seed
+    -   php artisan serve
+-   And enjoy !
+
 ## Learning the process
 
 If you would like to learn about the process of making this project please checkout my youtube channel, thanks guys !
