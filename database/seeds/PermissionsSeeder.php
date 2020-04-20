@@ -23,6 +23,7 @@ class PermissionsSeeder extends Seeder
         array_push($permission_array, Permission::create(['name' => 'edit_books']));
         array_push($permission_array, Permission::create(['name' => 'delete_books']));
         array_push($permission_array, Permission::create(['name' => 'view_books']));
+        array_push($permission_array, Permission::create(['name' => 'reserve_books']));
 
         array_push($permission_array, Permission::create(['name' => 'create_users']));
         array_push($permission_array, Permission::create(['name' => 'edit_users']));

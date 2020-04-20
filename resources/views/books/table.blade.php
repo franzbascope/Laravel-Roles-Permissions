@@ -19,6 +19,10 @@
                     <div class='btn-group'>
                         <a href="{{ route('books.show', [$books->id]) }}" class='btn btn-default btn-xs'><i
                                 class="glyphicon glyphicon-eye-open"></i></a>
+                        @can('reserve_books')
+                        <a href="{{ route('books.edit', [$books->id]) }}" class='btn btn-default btn-xs'><i
+                                class="glyphicon glyphicon-floppy-save"></i>Reserve</a>
+                        @endcan
                         @can('edit_books')
                         <a href="{{ route('books.edit', [$books->id]) }}" class='btn btn-default btn-xs'><i
                                 class="glyphicon glyphicon-edit"></i></a>
