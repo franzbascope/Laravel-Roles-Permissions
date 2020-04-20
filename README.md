@@ -19,9 +19,11 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
     -   php artisan migrate && php artisan db:seed
     -   php artisan serve
 -   And enjoy !
+-   Default users:
+    -   user:admin@gmail.com password:admin
 
 ## Learning the process
 
-If you would like to learn about the process of making this project please checkout my youtube channel, thanks guys !
+If you would like to learn about the process of making this project, I am going to upload a video these days explaining step by step the code, please checkout my youtube channel, thanks guys !
 
 -   [Video explanation](https://www.youtube.com/channel/UCrEqOvzltRtuCPgURpdfyXw?view_as=subscriber).
